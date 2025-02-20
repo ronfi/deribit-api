@@ -25,4 +25,11 @@ type GetOrderBookResponse struct {
 	BestAskPrice    float64     `json:"best_ask_price"`
 	BestAskAmount   float64     `json:"best_ask_amount"`
 	Asks            [][]float64 `json:"asks"`
+	Greeks          struct {
+		Delta float64 `json:"delta"`
+		Gamma float64 `json:"gamma"`
+		Vega  float64 `json:"vega"`
+		Theta float64 `json:"theta"`
+		Rho   float64 `json:"rho"`
+	} `json:"greeks"`
 }
