@@ -32,4 +32,5 @@ type GetOrderBookResponse struct {
 		Theta float64 `json:"theta"`
 		Rho   float64 `json:"rho"`
 	} `json:"greeks"`
+	MarkIv float64 `json:"mark_iv"`
 }
